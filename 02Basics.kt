@@ -41,4 +41,16 @@ fun main(args: Array<String>) {
   //var v5 : Long = v4 //Type mismatch: inferred type is Int but Long was expected
   //var v6 : Long = 5
   //var v7 : Int = v6 //Type mismatch: inferred type is Long but Int was expected
+  
+  //07: ? is used to signal that null is allowed for a variable
+  var bTest1 : Boolean?
+  bTest1 = false
+  println("bTest1 is $bTest1")
+  bTest1 = null 
+  println("bTest1 is $bTest1")
+  var bTest2 : Boolean
+  bTest2 = false
+  println("bTest2 is $bTest2")
+  //bTest2 = null //Compile error: Null can not be a value of a non-null type Boolean
+  //println("bTest2 is $bTest2")
 }
